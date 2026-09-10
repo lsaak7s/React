@@ -1,0 +1,7 @@
+{
+    "workbench.browser.autoReloadOnFileChange": false,
+    "workbench.browser.enableChatTools": false,
+    "workbench.browser.openLocalhostLinks": false,
+    "workbench.browser.sendElementsToChat.attachImages": false,
+    "workbench.browser.showInTitleBar": false
+}

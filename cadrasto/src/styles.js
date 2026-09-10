@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Conteiner = styled.body`
-background-color: darkgreen;
+
 .titulo{
     color: aliceblue;
     font-size: 60px;

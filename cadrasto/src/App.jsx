@@ -1,19 +1,10 @@
 export function App() {
-const helou = "React"
+  const helou = "React"
 
   return (
     <>
-      <h1>{helou}</h1>
-
-    </>
-  )
-}
-export function App1() {
-  const helou = 1
-  const helou1 = 1
-  return (
-    <>
-      <h2>Deu ${helou + helou1} </h2>
+      <h1 className="titulo">{helou}</h1>
+      <p className="mensagen">lest Go</p>
     </>
   )
 }

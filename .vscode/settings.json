@@ -3,5 +3,9 @@
     "workbench.browser.enableChatTools": false,
     "workbench.browser.openLocalhostLinks": false,
     "workbench.browser.sendElementsToChat.attachImages": false,
-    "workbench.browser.showInTitleBar": false
+    "workbench.browser.showInTitleBar": false,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true
 }

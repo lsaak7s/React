@@ -1,14 +1,17 @@
 import styled from 'styled-components'
 
-export const Conteiner = styled.body`
+export const Conteiner = styled.div``
 
-.titulo{
-    color: aliceblue;
-    font-size: 60px;
-}
-.mensagen{
- color: aliceblue;
-    font-size: 30px;
-}
+export const TopBackground = styled.div``
 
-`
+export const Form = styled.form``
+
+export const Title = styled.h2``
+
+export const ConteinerInput = styled.div``
+
+export const Input = styled.input``
+
+export const Inputlabel = styled.label``
+
+export const Button = styled.button``

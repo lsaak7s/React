@@ -1,12 +1,49 @@
-export function App() {
-  const helou = "React"
+import { Conteiner, TopBackground, Form, Title, ConteinerInput, Input, Inputlabel, Button } from "./styles"
 
+export function App() {
   return (
-    <>
-      <h1 className="titulo">{helou}</h1>
-      <p className="mensagen">lest Go</p>
-    </>
+    <Conteiner>
+
+      <TopBackground>
+
+        <img />
+
+      </TopBackground>
+
+      <Form>
+
+        <Title>Cadrasto Usuario</Title>
+
+        <ConteinerInput>
+
+          <div>
+
+            <div>
+              <Inputlabel>Name<span>*</span>
+                <Input type="text" placeholder="Name do usuario" />
+              </Inputlabel>
+            </div>
+
+            <div>
+              <Inputlabel>Age<span>*</span>
+                <Input type="Number" placeholder="Age do usuario" />
+              </Inputlabel>
+            </div>
+
+            <div>
+              <Inputlabel>email<span>*</span>
+                <Input type="email" placeholder="Email do usuario" />
+              </Inputlabel>
+            </div>
+
+          </div>
+
+        </ConteinerInput>
+
+        <Button>Cadrasto Usuario</Button>
+
+      </Form>
+
+    </Conteiner>
   )
 }
-
-

@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 export const Conteiner = styled.div``
 
-export const TopBackground = styled.div``
+export const TopBackground = styled.div` 
+img{
+    width: 200px;
+}
+`
 
 export const Form = styled.form``
 

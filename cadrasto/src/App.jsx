@@ -1,12 +1,14 @@
 import { Conteiner, TopBackground, Form, Title, ConteinerInput, Input, Inputlabel, Button } from "./styles"
 
+import imgHome from './assets/users.png'
+
 export function App() {
   return (
     <Conteiner>
 
       <TopBackground>
 
-        <img />
+        <img  src={imgHome}/>
 
       </TopBackground>
 

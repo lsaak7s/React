@@ -13,8 +13,8 @@ export function Home() {
   function createNewUser() {
 
     console.log(inputName.current.value)
-     console.log(inputAge.current.value)
-      console.log(inputEmail.current.value)
+    console.log(inputAge.current.value)
+    console.log(inputEmail.current.value)
 
   }
 

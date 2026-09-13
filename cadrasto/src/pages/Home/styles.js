@@ -9,8 +9,7 @@ height: 100vh;
 background-color:  navy;
 `
 export const TopBackground = styled.div`
-img{
-    height: 40vh;
+img{    height: 40vh;
     
 }
 display: flex;

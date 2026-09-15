@@ -2,9 +2,10 @@ import { useRef } from "react"
 
 import api from '../../services/api'
 
-import { Conteiner, TopBackground, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel, Button } from "./styles"
+import { Conteiner, TopBackground, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
 
 import imgHome from '../../assets/users.png'
+import Button from "../../components/Button"
 
 export function Home() {
 
@@ -69,7 +70,9 @@ export function Home() {
         </ConteinerInputEmail>
 
 
-        <Button type="button" onClick={createNewUser} >Cadrasto Usuario</Button>
+        <Button type="button" onClick={createNewUser}>
+          Cadastro Usuario
+        </Button>
 
       </Form>
 

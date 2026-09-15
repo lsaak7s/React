@@ -1,5 +1,7 @@
 import { useRef } from "react"
 
+import api from '../../services/api'
+
 import { Conteiner, TopBackground, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel, Button } from "./styles"
 
 import imgHome from '../../assets/users.png'
@@ -10,13 +12,17 @@ export function Home() {
   const inputAge = useRef()
   const inputEmail = useRef()
 
-  function createNewUser() {
+  async function createNewUser() {
+    const data = await api.post('/usuarios', {
 
-    console.log(inputName.current.value)
-    console.log(inputAge.current.value)
-    console.log(inputEmail.current.value)
+      email: inputEmail.current.value,
+      //Aqui estamos transformando a informaçao em um valor numerico
+      age: parseInt(inputAge.current.value),
+      name: inputName.current.value,
+    })
 
-  }
+    console.log(data)
+  };
 
   return (
 

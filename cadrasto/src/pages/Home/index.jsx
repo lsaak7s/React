@@ -76,3 +76,5 @@ export function Home() {
     </Conteiner>
   )
 }
+
+export default Home

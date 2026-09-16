@@ -7,7 +7,7 @@ function ListUsers() {
 
         <div>
             <h1>Listagem de Usuarios</h1>
-            <Button></Button>
+            <Button>Voltar</Button>
         </div>
 
     )

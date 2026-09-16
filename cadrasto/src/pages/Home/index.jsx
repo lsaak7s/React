@@ -39,7 +39,7 @@ export function Home() {
 
         <div>
 
-          <Title>Cadrastrar Usuario</Title>
+          <Title>Cadrastrar  Usuario</Title>
 
         </div>
 
@@ -71,7 +71,7 @@ export function Home() {
 
 
         <Button type="button" onClick={createNewUser}>
-          Cadastro Usuario
+          Cadastro  Usuario
         </Button>
 
       </Form>

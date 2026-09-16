@@ -1,10 +1,10 @@
 import { Button } from './styles'
 
-function DefaultButton() {
-
+function DefaultButton({ children, ...props }) {
+    console.log(props)
     return (
 
-        <Button>defaultButton</Button>
+        <Button>{children}</Button>
 
     )
 

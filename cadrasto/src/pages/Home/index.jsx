@@ -2,12 +2,13 @@ import { useRef } from "react"
 
 import api from '../../services/api'
 
-import { Conteiner, TopBackground, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
+import { Conteiner,  Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
 
 import imgHome from '../../assets/users.png'
 import Button from "../../components/Button"
+import TopBackground from "../../components/TopBackground"
 
-export function Home() {
+function Home() {
 
   const inputName = useRef()
   const inputAge = useRef()

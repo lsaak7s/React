@@ -1,7 +1,7 @@
 import { Button } from './styles'
 
-function DefaultButton({ children, ...props }) {
-    console.log(props)
+function DefaultButton({ children }) {
+
     return (
 
         <Button>{children}</Button>

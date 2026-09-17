@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import Home from './pages/Home'
 import ListUsers from './pages/Home/listUsers'
+
 const router = createBrowserRouter([{
     path: '/',
     element: <Home />

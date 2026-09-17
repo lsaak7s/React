@@ -7,12 +7,15 @@ import api from '../../services/api'
 import usersimg from '../../assets/users.png'
 import Button from "../../components/Button"
 import TopBackground from "../../components/TopBackground"
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
 
   const inputName = useRef()
   const inputAge = useRef()
   const inputEmail = useRef()
+
+  const navigate = useNavigate()
 
   async function createNewUser() {
     const data = await api.post('/usuarios', {
@@ -22,7 +25,7 @@ function Home() {
       age: parseInt(inputAge.current.value),
       name: inputName.current.value,
     })
-
+    //navigate('/lista-de-usuarios'),
     console.log(data)
   };
 
@@ -75,13 +78,13 @@ function Home() {
           Cadastro  Usuario
         </Button>
 
-        <Button type="button">
+        <Button type="button" onClick={() => navigate('/lista-de-usuarios')}>
           Ver Lista de usuarios
         </Button>
 
-      </Form>
+      </Form >
 
-    </Conteiner>
+    </Conteiner >
   )
 }
 

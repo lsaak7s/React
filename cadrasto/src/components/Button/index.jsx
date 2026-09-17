@@ -1,12 +1,20 @@
 import { Button } from './styles'
+import PropsTypes from 'prop-types'
 
-function DefaultButton({ children }) {
-
+function DefaultButton({ children, ...props }) {
+    //console.log(props)
+    //console.log(abacate)
     return (
 
-        <Button>{children}</Button>
+        <Button {...props}>{children}</Button>
 
     )
 
 }
+//Aqui estamos dizendo para o codigo que tipo de valor se trata
+DefaultButton.prototype = {
+    abacate: PropsTypes.number
+    
+}
+
 export default DefaultButton

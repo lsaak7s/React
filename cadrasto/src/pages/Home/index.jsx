@@ -1,12 +1,14 @@
 import { useRef } from "react"
 
+import { Conteiner, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
+
 import api from '../../services/api'
 
-import { Conteiner, TopBackground, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel, Button } from "./styles"
+import usersimg from '../../assets/users.png'
+import Button from "../../components/Button"
+import TopBackground from "../../components/TopBackground"
 
-import imgHome from '../../assets/users.png'
-
-export function Home() {
+function Home() {
 
   const inputName = useRef()
   const inputAge = useRef()
@@ -30,7 +32,7 @@ export function Home() {
 
       <TopBackground>
 
-        <img src={imgHome} alt="Imagen usuario" />
+        {usersimg}
 
       </TopBackground>
 
@@ -38,7 +40,7 @@ export function Home() {
 
         <div>
 
-          <Title>Cadrastrar Usuario</Title>
+          <Title>Cadrastrar  Usuario</Title>
 
         </div>
 
@@ -69,10 +71,14 @@ export function Home() {
         </ConteinerInputEmail>
 
 
-        <Button type="button" onClick={createNewUser} >Cadrasto Usuario</Button>
+        <Button type="button" onClick={createNewUser} abacate="47783270">
+          Cadastro  Usuario
+        </Button>
 
       </Form>
 
     </Conteiner>
   )
 }
+
+export default Home

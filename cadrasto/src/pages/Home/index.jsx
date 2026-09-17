@@ -1,10 +1,10 @@
 import { useRef } from "react"
 
+import { Conteiner, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
+
 import api from '../../services/api'
 
-import { Conteiner,  Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
-
-import imgHome from '../../assets/users.png'
+import usersimg from '../../assets/users.png'
 import Button from "../../components/Button"
 import TopBackground from "../../components/TopBackground"
 
@@ -32,7 +32,7 @@ function Home() {
 
       <TopBackground>
 
-        <img src={imgHome} alt="Imagen usuario" />
+        {usersimg}
 
       </TopBackground>
 

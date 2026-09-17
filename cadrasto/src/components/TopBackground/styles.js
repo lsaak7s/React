@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const TopBackground = styled.div`
 
 img{height: 40vh;
+    width:45vw;
 }
 
 display: flex;

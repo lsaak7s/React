@@ -9,7 +9,9 @@ function ListUsers() {
 
         <div>
             <TopBackground >
+
                 {outraImg}
+
             </TopBackground>
 
             <h1>Listagem de Usuarios</h1>

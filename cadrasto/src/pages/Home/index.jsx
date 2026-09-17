@@ -71,8 +71,12 @@ function Home() {
         </ConteinerInputEmail>
 
 
-        <Button type="button" onClick={createNewUser} abacate="47783270">
+        <Button type="button" onClick={createNewUser} theme="primary">
           Cadastro  Usuario
+        </Button>
+
+        <Button type="button">
+          Ver Lista de usuarios
         </Button>
 
       </Form>

@@ -14,5 +14,5 @@ height: 40vh;
 width: 60vw;
 
 background: linear-gradient(to right, #fe7e5d, #7f3841);
-border-radius:20px;
+border-radius:35px;
 `

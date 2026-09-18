@@ -2,24 +2,35 @@ import Button from "../../../components/Button"
 import TopBackground from "../../../components/TopBackground"
 import outraImg from '../../../assets/outraImg.png'
 import api from "../../../services/api"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 //import { useNavigate } from 'react-router-dom'
 
 function ListUsers() {
 
-    useEffect(() => {
-        async function usersLoud() {
-            const userApi = await api.get('/usuarios')
+    // Se realmente mudou algo os users atualiza a tela
 
-            console.log(userApi)
+    const [users, setUsers] = useState([])
+
+    useEffect(() => {
+
+        async function getUsers() {
+
+            const { data } = await api.get('/usuarios')
+
+            setUsers(data)
+
+            console.log(data)
         }
-        usersLoud()
+
+        getUsers()
+
     }, [])
 
 
     return (
 
         <div>
+            
             <TopBackground >
 
                 {outraImg}
@@ -27,7 +38,19 @@ function ListUsers() {
             </TopBackground>
 
             <h1>Listagem de Usuarios</h1>
+
+            {users.map((user) =>
+
+                <div>
+                    <p>{user.name}</p>
+                    <p>{user.email}</p>
+                    <p>{user.age}</p>
+                </div>
+
+            )}
+
             <Button>Voltar</Button>
+
         </div>
 
     )

@@ -30,7 +30,7 @@ function ListUsers() {
     return (
 
         <div>
-            
+
             <TopBackground >
 
                 {outraImg}
@@ -41,7 +41,7 @@ function ListUsers() {
 
             {users.map((user) =>
 
-                <div>
+                <div key={user.id}>
                     <p>{user.name}</p>
                     <p>{user.email}</p>
                     <p>{user.age}</p>

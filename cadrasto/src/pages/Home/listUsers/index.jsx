@@ -3,7 +3,7 @@ import TopBackground from "../../../components/TopBackground"
 
 import outraImg from '../../../assets/users.png'
 import trash from '../../../assets/trash.svg'
-import use from '../../../assets/use.png'
+
 
 import api from "../../../services/api"
 import { useEffect, useState } from 'react'
@@ -47,15 +47,12 @@ function ListUsers() {
             <Title>Listagem de Usuarios</Title>
 
             <ConteinerUser>
-                {users.map((user) => (
+                {users.map((user) => 
 
                     <CardUser key={user.id}>
-                        <AvatarUser >
 
-                            {use}
-
-                        </AvatarUser>
-
+                        <AvatarUser src={`https://avatarapi.runflare.run/public?usearname=${user.id}`}/>
+                        
                         <div>
                             <p>{user.name}</p>
                             <p>{user.email}</p>
@@ -65,7 +62,7 @@ function ListUsers() {
                         <TrashIcon src={trash} alt='lixo'></TrashIcon>
 
                     </CardUser>
-                )
+                
                 )}</ConteinerUser >
 
 

@@ -24,14 +24,14 @@ gap:20px;
 `
 
 export const CardUser = styled.div`
-background-color:seagreen;
+background-color:aqua;
 padding:16px;
 border-radius:15px;
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:20px;
-max-width:400px;
+max-width:900px;
 `
 
 export const AvatarUser = styled.div`

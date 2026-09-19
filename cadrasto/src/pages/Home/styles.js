@@ -18,7 +18,8 @@ gap: 30px;
 
 export const Inputlabel = styled.label`
 span{
-    color: red;
+   
+    color: rgb(255, 0, 0);
 }
 display: flex;
 align-items: center;

@@ -10,13 +10,36 @@ justify-content:space-evenly;
 padding:20px;
 `
 
-
 export const ConteinerUser = styled.div`
 display:grid;
-grid-template-columns:1fr 1fr 1fr ;
 gap:10px;
-@media (max-width:750px) {
+
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+width:100%;
+
+@media (max-width:1200px) {
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    width:100%;
+}
+
+@media (max-width:900px) {
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    width:100%;
+}
+
+@media (max-width:700px) {
+    grid-template-columns:1fr 1fr 1fr ;
+    width:100%;
+}
+
+@media (max-width:500px) {
+    grid-template-columns: 1fr 1fr ;
+    width:100%;
+}
+
+@media (max-width:300px) {
     grid-template-columns: 1fr ;
+    width:100%;
 }
 `
 
@@ -43,17 +66,27 @@ p {
 > img {
   flex-shrink: 0;
 }
+@media (max-width: 500px) {
+grid-template-columns: 1fr ;
+}
 `
 
 export const AvatarUser = styled.img`
- width: 30%;
+    width: 30%;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
 
+  @media (max-width: 500px) {
+  width:30vw; 
+ }
 `
 
 export const TrashIcon = styled.img`
 cursor: pointer;
-width:2vw;
+
+@media (max-width: 200px) {
+ width:6vw; 
+}
+
 `

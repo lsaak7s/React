@@ -1,20 +1,20 @@
+import { Container, ConteinerUser, CardUser, TrashIcon, AvatarUser } from "./styles"
 import Button from "../../../components/Button"
 import TopBackground from "../../../components/TopBackground"
+import Title from "../../../components/Titulo"
+import AvatarGrid from "../../../components/AvatarDim"
 
-import outraImg from '../../../assets/users.png'
 import trash from '../../../assets/trash.svg'
-import use from '../../../assets/use.png'
 
+import { useNavigate } from 'react-router-dom'
 import api from "../../../services/api"
 import { useEffect, useState } from 'react'
-
-
-import { Container, Title, ConteinerUser, CardUser, TrashIcon, AvatarUser } from "./styles"
-
 
 function ListUsers() {
 
     // Se realmente mudou algo os users atualiza a tela
+
+    const navegate = useNavigate()
 
     const [users, setUsers] = useState([])
 
@@ -33,43 +33,51 @@ function ListUsers() {
 
     }, [])
 
+    async function deletUser(id) {
+
+        await api.delete(`/usuarios/${id}`)
+
+        const userUpdate = users.filter(user => user.id !== id)
+
+        setUsers(userUpdate)
+
+    };
+
 
     return (
 
         <Container>
 
-            <TopBackground >
+            <TopBackground>
 
-                {outraImg}
+                <AvatarGrid />
 
             </TopBackground>
 
-            <Title>Listagem de Usuarios</Title>
+            <Title>User List</Title>
 
+            <Button type="Button" onClick={() => navegate('/')}>To go back</Button>
+            
             <ConteinerUser>
-                {users.map((user) => (
+
+                {users.map((user) =>
 
                     <CardUser key={user.id}>
-                        <AvatarUser >
 
-                            {use}
-
-                        </AvatarUser>
+                        <AvatarUser src={`https://avatarapi.runflare.run/public?usearname=${user.id}`} />
 
                         <div>
-                            <p>{user.name}</p>
-                            <p>{user.email}</p>
-                            <p>{user.age}</p>
+                            <p>Name: {user.name}</p>
+                            <p>Age: {user.age}</p>
+                            <p>Email: {user.email}</p>
                         </div>
 
-                        <TrashIcon src={trash} alt='lixo'></TrashIcon>
+                        <TrashIcon src={trash} alt='lixo' onClick={() => deletUser(user.id)} >
+
+                        </TrashIcon>
 
                     </CardUser>
-                )
                 )}</ConteinerUser >
-
-
-            <Button>Voltar</Button>
 
         </Container >
 

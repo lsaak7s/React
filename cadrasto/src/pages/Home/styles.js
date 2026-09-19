@@ -13,51 +13,113 @@ export const Form = styled.form`
 display: flex;
 align-items: center;
 flex-flow:column;
-gap: 10px;
+gap: 30px;
 `
-export const Title = styled.h2`
-font-size:30px ;
-color: #ffffff;
-margin: 3vh;
+
+export const Inputlabel = styled.label`
+span{
+   
+    color: rgb(255, 0, 0);
+}
+display: flex;
+align-items: center;
+flex-flow: row,wrap;
+height:14px;
+width:1px;
+font-size:2vw;
+color: aliceblue;
+
+@media (max-width:700px) {
+    font-size:5vw;
+}
+
+
 `
+
 export const ConteinerInput = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-flex-flow: row,wrap;
+flex-flow: row;
 gap:10px;
+
 
 input{
     font-size: 3vh;
-    width:45vh;
-    height: 7vh;
+    width:40vh;
+    height: 8vh;
     border-radius: 10px;
     background-color: aliceblue;
     border: none ;
 }
-`
-export const ConteinerInputEmail = styled.div`
-input{
-    font-size: 3vh;
-    max-width: 51vw;
-    width:60vw;
-    height: 7vh;
-    border-radius: 10px;
-    border: none;
-    background-color: aliceblue;
+@media (max-width:700px) {
+    display:inline;
+    flex-flow:row;
 }
 
-
 `
-export const Inputlabel = styled.label`
-span{
-    color: red;
-}
-display: flex;
-align-items: start;
+
+export const ConteinerInputName = styled.div`
+display:flex;
+align-items: center;
+justify-content: center;
 flex-flow: row;
 
-font-size: 2vw;
-color: aliceblue;
+input{
+    font-size: 3vh;
+    width:35vh;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none ;
+    cursor: pointer;
+}
+@media (max-width:700px) {
+   input{
+    width:100%;
+   } 
+}
 `
-export const Input = styled.input``
+
+export const ConteinerInputAge = styled.div`
+display:flex;
+align-items: center;
+justify-content: center;
+flex-flow: row;
+input{
+    font-size: 3vh;
+    width:8vh;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none ;
+    cursor: pointer;
+}
+@media (max-width:700px) {
+   input{
+    width:20%;
+   } 
+}
+`
+
+export const ConteinerInputEmail = styled.div`
+display:flex;
+
+input{
+    font-size: 3vh;
+    max-width: 30vw;
+    width:40vw;
+    height: 8vh;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+ }
+ @media (max-width:700px) {
+   input{
+    width:100%;
+   } 
+}
+
+`
+

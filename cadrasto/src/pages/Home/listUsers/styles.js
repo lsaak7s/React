@@ -4,41 +4,100 @@ export const Container = styled.div`
 background-color:darkblue;
 display:flex;
 flex-direction:column;
-min-height:100vh;
+min-height: 100vh;
 align-items:center;
 justify-content:space-evenly;
 padding:20px;
 `
 
-export const Title = styled.h2``
-
 export const ConteinerUser = styled.div`
 display:grid;
-grid-template-columns:1fr 1fr 1fr ;
-gap:20px;
+gap:10px;
 
-@media (max-width:750px) {
-    grid-template-columns: 1fr ;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+width:100%;
+
+@media (max-width:1200px) {
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    width:100%;
 }
 
+@media (max-width:900px) {
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    width:100%;
+}
+
+@media (max-width:700px) {
+    grid-template-columns:1fr 1fr 1fr ;
+    width:100%;
+}
+
+@media (max-width:500px) {
+    grid-template-columns: 1fr 1fr ;
+    width:100%;
+}
+
+@media (max-width:300px) {
+    grid-template-columns: 1fr ;
+    width:100%;
+}
 `
 
 export const CardUser = styled.div`
-background-color:seagreen;
-padding:16px;
-border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:20px;
-max-width:400px;
+background-color:black;
+border-radius:18px;
+height: auto;
+min-height: 160px;
+padding: 16px;
+box-sizing: border-box;
+
+> div {
+  flex: 1;
+  min-width: 0;
+}
+
+p {
+  color:aliceblue;
+  margin: 8px 0;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+> img {
+  flex-shrink: 0;
+}
+@media (max-width: 500px) {
+grid-template-columns: 1fr ;
+}
 `
 
-export const AvatarUser = styled.div`
-height:80px;
+export const AvatarUser = styled.img`
+    width: 30%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
 
+  @media (max-width: 500px) {
+  width:30vw; 
+ }
 `
 
-export const TrashIcon = styled.div`
-color: #fff6f6;
+export const TrashIcon = styled.img`
+cursor: pointer;
+
+@media (max-width: 200px) {
+ width:6vw; 
+}
+cursor: pointer;
+  transition: filter 0.2s, transform 0.1s;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+    transform: scale(0.86);
+  }
+
 `

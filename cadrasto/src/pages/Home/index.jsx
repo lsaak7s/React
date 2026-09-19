@@ -1,12 +1,12 @@
-import { useRef } from "react"
-
-import { Conteiner, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
-
-import api from '../../services/api'
-
-import usersimg from '../../assets/users.png'
+import Title from "../../components/Titulo"
 import Button from "../../components/Button"
 import TopBackground from "../../components/TopBackground"
+import AvatarGrid from "../../components/AvatarDim"
+
+import { Conteiner, Form, ConteinerInput, ConteinerInputEmail, ConteinerInputName, ConteinerInputAge, Inputlabel } from "./styles"
+
+import { useRef } from "react"
+import api from '../../services/api'
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
@@ -25,8 +25,8 @@ function Home() {
       age: parseInt(inputAge.current.value),
       name: inputName.current.value,
     })
-    //navigate('/lista-de-usuarios'),
     console.log(data)
+
   };
 
   return (
@@ -35,52 +35,53 @@ function Home() {
 
       <TopBackground>
 
-        {usersimg}
+        <AvatarGrid />
 
       </TopBackground>
 
       <Form>
 
-        <div>
-
-          <Title>Cadrastrar  Usuario</Title>
-
-        </div>
+        <Title>Register User</Title>
 
         <ConteinerInput>
 
-          <div>
-            <Inputlabel>Name<span>*</span></Inputlabel>
-            <Input type="text" placeholder="Name do usuario" ref={inputName} />
+          <ConteinerInputName>
+            <div>
+              <Inputlabel>User<span>*</span></Inputlabel>
+              <input type="text" placeholder="" ref={inputName} />
+            </div>
+          </ConteinerInputName>
 
-          </div>
 
+          <ConteinerInputAge>
+            <div>
+              <Inputlabel>Age<span>*</span></Inputlabel>
+              <input type="Number" placeholder="" ref={inputAge} />
+            </div>
+          </ConteinerInputAge>
 
-          <div>
-            <Inputlabel>Age<span>*</span></Inputlabel>
-            <Input type="Number" placeholder="Age do usuario" ref={inputAge} />
+          <ConteinerInputEmail>
 
-          </div>
+            <div>
+              <Inputlabel>Email<span>*</span></Inputlabel>
+              <input type="email" placeholder="" ref={inputEmail} />
+            </div>
+
+          </ConteinerInputEmail>
 
         </ConteinerInput>
 
-        <ConteinerInputEmail>
 
-          <div>
-            <Inputlabel>email<span>*</span></Inputlabel>
-            <Input type="email" placeholder="Email do usuario" ref={inputEmail} />
-          </div>
+        <div>
+          <Button type="Reloud" onClick={createNewUser} >
+            User Registration
+          </Button>
 
-        </ConteinerInputEmail>
+          <Button type="button" onClick={() => navigate('/lista-de-usuarios')}>
+            View user list
+          </Button>
+        </div>
 
-
-        <Button type="button" onClick={createNewUser} theme="primary">
-          Cadastro  Usuario
-        </Button>
-
-        <Button type="button" onClick={() => navigate('/lista-de-usuarios')}>
-          Ver Lista de usuarios
-        </Button>
 
       </Form >
 

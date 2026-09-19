@@ -34,11 +34,11 @@ gap:20px;
 max-width:900px;
 `
 
-export const AvatarUser = styled.div`
-height:80px;
+export const AvatarUser = styled.img`
+background-color:#fff6f6;
 
 `
 
-export const TrashIcon = styled.div`
+export const TrashIcon = styled.img`
 color: #fff6f6;
 `

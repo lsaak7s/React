@@ -1,14 +1,11 @@
 import { TopBackground } from './styles'
 
-function DefaultTopBackground({children}) {
-
+function DefaultTopBackground({ children }) {
     return (
-
-        <TopBackground alt="Imagen usuario">
-            <img src={children} alt="Imagem usuário" />
+        <TopBackground>
+            {children}
         </TopBackground>
-
     )
-
 }
+
 export default DefaultTopBackground

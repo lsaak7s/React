@@ -1,10 +1,10 @@
 import { useRef } from "react"
 
-import { Conteiner, Form, Title, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
+import { Conteiner, Form, Title, AvatarGrid, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
 
 import api from '../../services/api'
 
-import usersimg from '../../assets/users.png'
+//import usersimg from '../../assets/users.png'
 import Button from "../../components/Button"
 import TopBackground from "../../components/TopBackground"
 import { useNavigate } from 'react-router-dom'
@@ -35,7 +35,18 @@ function Home() {
 
       <TopBackground>
 
-        {usersimg}
+
+        <AvatarGrid>
+          {Array.from({ length: 8 }, (_, index) => (
+            <img
+              key={index}
+              src={`https://avatarapi.runflare.run/public?username=avatar-${index}`}
+              alt=""
+            />
+          ))}
+        </AvatarGrid>
+
+
 
       </TopBackground>
 

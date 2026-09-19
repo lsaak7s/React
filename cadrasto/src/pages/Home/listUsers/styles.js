@@ -10,6 +10,22 @@ justify-content:space-evenly;
 padding:20px;
 `
 
+export const AvatarGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+`
+
 export const Title = styled.h2``
 
 export const ConteinerUser = styled.div`

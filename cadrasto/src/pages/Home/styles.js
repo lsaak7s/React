@@ -8,34 +8,12 @@ justify-content: center;
 height: 100vh;
 background-color:  navy;
 `
-export const AvatarGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  width: 100%;
-  max-width: 560px;
-  margin: 0 auto;
-
-  img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-`
-
-
 
 export const Form = styled.form`
 display: flex;
 align-items: center;
 flex-flow:column;
 gap: 10px;
-`
-export const Title = styled.h2`
-font-size:30px ;
-color: #ffffff;
-margin: 3vh;
 `
 export const ConteinerInput = styled.div`
 display:flex;

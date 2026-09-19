@@ -11,7 +11,7 @@ import api from "../../../services/api"
 import { useEffect, useState } from 'react'
 
 
-import { Container, Title, ConteinerUser, CardUser, TrashIcon, AvatarUser } from "./styles"
+import { Container, Title, ConteinerUser, AvatarGrid,CardUser, TrashIcon, AvatarUser } from "./styles"
 
 
 function ListUsers() {
@@ -54,7 +54,15 @@ function ListUsers() {
 
             <TopBackground>
 
-                {outraImg}
+                <AvatarGrid>
+                          {Array.from({ length: 8 }, (_, index) => (
+                            <img
+                              key={index}
+                              src={`https://avatarapi.runflare.run/public?username=avatar-${index}`}
+                              alt=""
+                            />
+                          ))}
+                        </AvatarGrid>
 
             </TopBackground>
 

@@ -1,12 +1,14 @@
 import { useRef } from "react"
 
-import { Conteiner, Form, Title, AvatarGrid, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
+import { Conteiner, Form, ConteinerInput, ConteinerInputEmail, Input, Inputlabel } from "./styles"
 
 import api from '../../services/api'
 
-//import usersimg from '../../assets/users.png'
+import  Title  from "../../components/Titulo"
 import Button from "../../components/Button"
 import TopBackground from "../../components/TopBackground"
+
+import AvatarGrid from "../../components/AvatarDim"
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
@@ -25,8 +27,8 @@ function Home() {
       age: parseInt(inputAge.current.value),
       name: inputName.current.value,
     })
-    //navigate('/lista-de-usuarios'),
     console.log(data)
+
   };
 
   return (
@@ -35,18 +37,7 @@ function Home() {
 
       <TopBackground>
 
-
-        <AvatarGrid>
-          {Array.from({ length: 8 }, (_, index) => (
-            <img
-              key={index}
-              src={`https://avatarapi.runflare.run/public?username=avatar-${index}`}
-              alt=""
-            />
-          ))}
-        </AvatarGrid>
-
-
+        <AvatarGrid />
 
       </TopBackground>
 
@@ -54,7 +45,7 @@ function Home() {
 
         <div>
 
-          <Title>Cadrastrar  Usuario</Title>
+          <Title>Cadrastrar Usuario</Title>
 
         </div>
 

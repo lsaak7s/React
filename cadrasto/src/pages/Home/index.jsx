@@ -3,7 +3,7 @@ import Button from "../../components/Button"
 import TopBackground from "../../components/TopBackground"
 import AvatarGrid from "../../components/AvatarDim"
 
-import { Conteiner, Form, ConteinerInput, ConteinerInputEmail, ConteinerInputName, ConteinerInputAge, Inputlabel,ConteinerButton } from "./styles"
+import { Conteiner, Form, ConteinerInput, ConteinerInputEmail, ConteinerInputName, ConteinerInputAge, Inputlabel } from "./styles"
 
 import { useRef } from "react"
 import api from '../../services/api'
@@ -41,11 +41,7 @@ function Home() {
 
       <Form>
 
-        <div>
-
-          <Title>Cadrastrar Usuario</Title>
-
-        </div>
+        <Title>Cadrastrar Usuario</Title>
 
         <ConteinerInput>
 
@@ -75,8 +71,8 @@ function Home() {
 
         </ConteinerInput>
 
-        <ConteinerButton>
 
+        <div>
           <Button type="button" onClick={createNewUser} theme="primary">
             Cadastro  Usuario
           </Button>
@@ -84,8 +80,8 @@ function Home() {
           <Button type="button" onClick={() => navigate('/lista-de-usuarios')}>
             Ver Lista de usuarios
           </Button>
+        </div>
 
-        </ConteinerButton>
 
       </Form >
 

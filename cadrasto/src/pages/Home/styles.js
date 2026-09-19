@@ -13,7 +13,7 @@ export const Form = styled.form`
 display: flex;
 align-items: center;
 flex-flow:column;
-gap: 40px;
+gap: 30px;
 `
 
 export const Inputlabel = styled.label`
@@ -85,13 +85,6 @@ input{
     border-radius: 5px;
     border: none;
     background-color: aliceblue;
- }
-
-`
-export const ConteinerButton = styled.div`
-input{
-  background-color:antiquewhite;
-    gap:10px;
  }
 
 `

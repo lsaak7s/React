@@ -290,3 +290,13 @@ Adicionar testes para os principais fluxos.
 Desenvolvido durante meus estudos de React. 💻
 
 Aprendendo na prática, entendendo os erros e evoluindo a cada funcionalidade.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo **LICENSE** para mais informações.
+
+---
+
+### Desenvolvido com ❤️ utilizando React, JavaScript e styled-components.
+
+Aprendendo, superando desafios e evoluindo um componente por vez. 🚀

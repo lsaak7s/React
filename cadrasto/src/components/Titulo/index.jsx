@@ -6,9 +6,6 @@ function DefaultTitulo({children}) {
 
         <Title>{children}</Title>
 
-
-
-
     )
 
 }

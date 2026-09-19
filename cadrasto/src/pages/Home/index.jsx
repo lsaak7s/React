@@ -41,7 +41,7 @@ function Home() {
 
       <Form>
 
-        <Title>Cadrastrar Usuario</Title>
+        <Title>Register User</Title>
 
         <ConteinerInput>
 
@@ -74,11 +74,11 @@ function Home() {
 
         <div>
           <Button type="button" onClick={createNewUser} theme="primary">
-            Cadastro  Usuario
+            User Registration
           </Button>
 
           <Button type="button" onClick={() => navigate('/lista-de-usuarios')}>
-            Ver Lista de usuarios
+            View user list
           </Button>
         </div>
 

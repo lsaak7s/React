@@ -15,6 +15,6 @@ align-items:center;
 height: 28vh;
 width: 60vw;
 
-background: linear-gradient(to right, #fe7e5d, #7f3841);
-border-radius:35px;
+background:  #000000;
+border-radius:20px;
 `

@@ -36,6 +36,7 @@ justify-content: center;
 flex-flow: row,wrap;
 gap:10px;
 
+
 input{
     font-size: 3vh;
     width:40vh;
@@ -51,6 +52,7 @@ display:flex;
 align-items: center;
 justify-content: center;
 flex-flow: row,wrap;
+
 input{
     font-size: 3vh;
     width:35vh;
@@ -58,6 +60,7 @@ input{
     border-radius: 5px;
     background-color: aliceblue;
     border: none ;
+    cursor: pointer;
 }
 `
 
@@ -73,6 +76,7 @@ input{
     border-radius: 5px;
     background-color: aliceblue;
     border: none ;
+    cursor: pointer;
 }
 `
 
@@ -85,6 +89,7 @@ input{
     border-radius: 5px;
     border: none;
     background-color: aliceblue;
+    cursor: pointer;
  }
 
 `

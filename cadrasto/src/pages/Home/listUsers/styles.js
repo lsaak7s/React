@@ -88,5 +88,16 @@ cursor: pointer;
 @media (max-width: 200px) {
  width:6vw; 
 }
+cursor: pointer;
+  transition: filter 0.2s, transform 0.1s;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+    transform: scale(0.86);
+  }
 
 `

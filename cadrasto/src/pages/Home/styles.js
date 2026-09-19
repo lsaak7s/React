@@ -26,15 +26,21 @@ align-items: center;
 flex-flow: row,wrap;
 height:14px;
 width:1px;
-font-size: 2vw;
+font-size:2vw;
 color: aliceblue;
+
+@media (max-width:700px) {
+    font-size:5vw;
+}
+
+
 `
 
 export const ConteinerInput = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-flex-flow: row,wrap;
+flex-flow: row;
 gap:10px;
 
 
@@ -46,13 +52,18 @@ input{
     background-color: aliceblue;
     border: none ;
 }
+@media (max-width:700px) {
+    display:inline;
+    flex-flow:row;
+}
+
 `
 
 export const ConteinerInputName = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-flex-flow: row,wrap;
+flex-flow: row;
 
 input{
     font-size: 3vh;
@@ -63,13 +74,18 @@ input{
     border: none ;
     cursor: pointer;
 }
+@media (max-width:700px) {
+   input{
+    width:100%;
+   } 
+}
 `
 
 export const ConteinerInputAge = styled.div`
 display:flex;
 align-items: center;
 justify-content: center;
-flex-flow: row,wrap;
+flex-flow: row;
 input{
     font-size: 3vh;
     width:8vh;
@@ -79,9 +95,16 @@ input{
     border: none ;
     cursor: pointer;
 }
+@media (max-width:700px) {
+   input{
+    width:20%;
+   } 
+}
 `
 
 export const ConteinerInputEmail = styled.div`
+display:flex;
+
 input{
     font-size: 3vh;
     max-width: 30vw;
@@ -92,6 +115,11 @@ input{
     background-color: aliceblue;
     cursor: pointer;
  }
+ @media (max-width:700px) {
+   input{
+    width:100%;
+   } 
+}
 
 `
 

@@ -73,7 +73,7 @@ function Home() {
 
 
         <div>
-          <Button type="button" onClick={createNewUser} theme="primary">
+          <Button type="Reloud" onClick={createNewUser} >
             User Registration
           </Button>
 

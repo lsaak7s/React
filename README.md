@@ -17,20 +17,14 @@ Também utilizei uma API externa para carregar avatares e criei um componente re
 React ainda é novo para mim, mas já estou conseguindo adaptar funcionalidades, investigar problemas e organizar melhor o código. Cada dificuldade encontrada durante o desenvolvimento se tornou uma oportunidade para entender como a aplicação funciona.
 
 🖼️ Prévia
-
-
-
-
-
-
 Tela de cadastro
-
+<img width="1753" height="960" alt="Captura de tela 2026-09-19 173340" src="https://github.com/user-attachments/assets/f02c36c5-1c4d-4ef3-8a09-fa2275ff9ff0" />
 Formulário para inserir nome, idade e e-mail, com botões para cadastrar e acessar a listagem.
 
 <!-- Insira aqui a imagem da tela de cadastro pelo editor do GitHub. -->
 
 Tela de listagem
-
+<img width="1774" height="986" alt="Captura de tela 2026-09-19 173251" src="https://github.com/user-attachments/assets/5956f17a-76d1-4516-94f4-12fdca2f59c5" />
 Cartões com os dados dos usuários, avatares e opção de exclusão.
 
 <!-- Insira aqui a imagem da tela de listagem pelo editor do GitHub. -->

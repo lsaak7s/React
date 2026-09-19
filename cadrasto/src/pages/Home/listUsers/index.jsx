@@ -39,13 +39,13 @@ function ListUsers() {
 
     async function deletUser(id) {
 
-        await api.delete(`/lista-de-usuarios/${id}`)
+        await api.delete(`/usuarios/${id}`)
 
         const userUpdate = users.filter(user => user.id !== id)
 
         setUsers(userUpdate)
 
-    }
+    };
 
 
     return (

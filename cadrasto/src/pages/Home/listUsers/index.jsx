@@ -1,9 +1,16 @@
 import Button from "../../../components/Button"
 import TopBackground from "../../../components/TopBackground"
-import outraImg from '../../../assets/outraImg.png'
+
+import outraImg from '../../../assets/users.png'
+import trash from '../../../assets/trash.svg'
+import use from '../../../assets/use.png'
+
 import api from "../../../services/api"
 import { useEffect, useState } from 'react'
-//import { useNavigate } from 'react-router-dom'
+
+
+import { Container, Title, ConteinerUser, CardUser, TrashIcon, AvatarUser } from "./styles"
+
 
 function ListUsers() {
 
@@ -29,29 +36,42 @@ function ListUsers() {
 
     return (
 
-        <div>
-            
+        <Container>
+
             <TopBackground >
 
                 {outraImg}
 
             </TopBackground>
 
-            <h1>Listagem de Usuarios</h1>
+            <Title>Listagem de Usuarios</Title>
 
-            {users.map((user) =>
+            <ConteinerUser>
+                {users.map((user) => (
 
-                <div>
-                    <p>{user.name}</p>
-                    <p>{user.email}</p>
-                    <p>{user.age}</p>
-                </div>
+                    <CardUser key={user.id}>
+                        <AvatarUser >
 
-            )}
+                            {use}
+
+                        </AvatarUser>
+
+                        <div>
+                            <p>{user.name}</p>
+                            <p>{user.email}</p>
+                            <p>{user.age}</p>
+                        </div>
+
+                        <TrashIcon src={trash} alt='lixo'></TrashIcon>
+
+                    </CardUser>
+                )
+                )}</ConteinerUser >
+
 
             <Button>Voltar</Button>
 
-        </div>
+        </Container >
 
     )
 

@@ -40,32 +40,32 @@ function ListUsers() {
 
             <TopBackground >
 
-              {outraImg}  
+                {outraImg}
 
             </TopBackground>
 
             <Title>Listagem de Usuarios</Title>
 
             <ConteinerUser>
-
-                {users.map((user) =>
+                {users.map((user) => (
 
                     <CardUser key={user.id}>
-
-                        <AvatarUser>
+                        <AvatarUser >
 
                             {use}
 
                         </AvatarUser>
+
                         <div>
                             <p>{user.name}</p>
                             <p>{user.email}</p>
                             <p>{user.age}</p>
                         </div>
-                        <TrashIcon src={trash} alt='lixo' ></TrashIcon>
+
+                        <TrashIcon src={trash} alt='lixo'></TrashIcon>
 
                     </CardUser>
-
+                )
                 )}</ConteinerUser >
 
 

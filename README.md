@@ -297,6 +297,9 @@ Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo **LICEN
 
 ---
 
+<div align="center">
+
 ### Desenvolvido com ❤️ utilizando React, JavaScript e styled-components.
 
 Aprendendo, superando desafios e evoluindo um componente por vez. 🚀
+</div>
